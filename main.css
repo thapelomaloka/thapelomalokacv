@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/*
+* ! Reset the web page
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*
+* ! Variables
+*/
+:root{
+    --myColor : rgb(0, 117, 226);
+    --myColorHeadings :rgb(0, 0, 0);
+    --myColorContent : rgb(95, 95, 95);
+}
+
+.loader{
+    
+    background : #1F1F1F url(/Loader/load.gif) no-repeat center center;
+    background-size: 25%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top:0;
+   
+}
+
+
+/*
+*  Header Style
+*/
+.header{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+
+/*
+*  Image Style
+*/
+ .image{
+    margin-top:20px ;
+    margin-left: 10px;
+    border-radius: 50%;
+    background: url("img/Thapelo\ Professional-01.jpeg");
+    width: 115px;
+    height: 115px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+/*
+*  contant Style
+*/
+
+.contant h1{
+    margin-top: 25px;
+    margin-left: 15px;
+    color: var(--myColorHeadings);
+    font-size: 30px;
+}
+
+.contant h4{
+    line-height: 30px;
+    color: var(--myColor);
+    font-size: 19px;
+    margin-left: 15px;
+    font-weight:600;
+}
+
+
+
+/*
+*  contact-info Style
+*/
+.contact-info{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.bi-phone, .bi-envelope-fill, .bi-linkedin, .car{
+
+    color: var(--myColor) ;
+    font-size: 25px;
+    margin-left: 3px;
+
+}
+.text,a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--myColorHeadings);
+}
+.Email{
+    text-decoration: none;
+    list-style: none;
+    color: var(--myColorHeadings);
+    animation: animate 2.5s linear infinite;
+}
+
+@keyframes animate{
+    
+    0%{
+        opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  .contact-info1{
+    margin-left: 54px;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    gap: 15px;
+
+  }
+  
+
+/*
+*  contact-info Style
+*/
+  .divder{
+    border-top: 3px solid var(--myColor);
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+/*
+*  Summary Head Style
+*/
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.summary{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px;
+    color: var(--myColorContent);
+}
+
+
+/*
+*  Education Head Style
+*/
+
+p{
+    line-height: 30px;
+}
+h5{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+h6{
+    text-align: center;
+    color: var(--myColor);
+    font-size: 15px;
+}
+.course{
+    color: var(--myColorContent);
+    margin-top: 10px;
+}
+
+.course-info{
+    padding: 15px;
+}
+
+.course-infoList, li{
+    margin-left: 20px;
+}
+ul,.GPA li{
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+    background-color: var(--myColor);
+}
+
+footer{
+    color: var(--myColorHeadings);
+    color: rgb(0, 255, 0);
+} 
+
+.contact-me{
+    font-size: 11px;
+    color: var(--myColorHeadings);
+}
+
+.social, a{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+p,.fa-copyright{
+    text-align: center;
+    margin-top: 10px;
+}
